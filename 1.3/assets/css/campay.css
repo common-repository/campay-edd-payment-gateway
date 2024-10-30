@@ -1,0 +1,157 @@
+#campay_transaction_number {
+    width: inherit;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    opacity:1;
+    z-index:9;
+}
+#campay-number-error{
+	color:red;
+	display:none;
+}
+input#campay_transaction_number {
+    background: rgb(238 238 238);
+    color: #000 !important;
+    border: 2px solid #000;
+    font-weight: 500;
+	position:relative;
+}
+
+.input_holder input{
+	margin-top: 10px !important;
+	z-index: 99 !important;
+	opacity: 1 !important;
+	position: relative !important;
+}
+.form_holder {
+  position: relative;
+  min-height: 100px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    right: 0;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cp_payment_waiting{
+    width:350px;
+    margin:auto;
+}
+.cp_payment_info{
+    color:red;
+    text-align:center;
+    padding:10px 0;
+}
+
+/*accordian*/
+.row.css_accordion input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.row.css_accordion {
+  display: flex;
+  position : relative;
+}
+.row.css_accordion .col {
+  flex: 1;
+}
+.row.css_accordion .col:last-child {
+  margin-left: 1em;
+}
+
+/* Accordion styles */
+.row.css_accordion .tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.row.css_accordion .tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.row.css_accordion .tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #2c3e50;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+.row.css_accordion .tab-label:hover {
+  background: #1a252f;
+}
+.row.css_accordion .tab-label::after {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.row.css_accordion .tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+}
+.row.css_accordion .tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.row.css_accordion .tab-close:hover {
+  background: #1a252f;
+}
+
+.row.css_accordion input:checked + .tab-label {
+  background: #1a252f;
+}
+.row.css_accordion input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+.row.css_accordion input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
